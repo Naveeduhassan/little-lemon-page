@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Markazi Text', serif;
+}
+body{
+    background: linear-gradient(90deg, rgba(19, 1, 46, 0.925) 0%, rgb(43, 14, 44) 0%, rgb(18, 0, 27) 100%);
+    color: white;
+}
+header{
+    align-items: center;
+    padding: 1rem;
+    background-color: #f55c03; 
+    justify-content: center;
+}
+
+header > img {
+    height: 100px;
+    background: drop-shadow(5px 5px 15px  #ffffff5d);
+}
+header > img:hover{
+    transform: scale(1.05);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    padding-left: 90px;
+    background-color: #48014e5d;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 12px  #48014e5d;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    
+    color: white;
+    padding: 0.8rem;
+    text-decoration: none;
+}
+
+nav:hover{
+    box-shadow: 2px 2px 12px  #48014e5d;
+    border-radius: 5%;
+    background-color: #0000005d;
+}
+nav:hover a:any-link{
+    background-color: #48014ef5;
+    box-shadow: 2px 2px 12px  #48014e5d;
+    border-radius: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section .h1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem; 
+    height: 45vh; 
+    position: relative;
+    width: 100%;
+    animation: slider 10s linear infinite;
+}
+
+@keyframes slider {
+0%{        background-image: linear-gradient(rgba(28, 6, 54, 0.541), rgba(69, 45, 82, 0.664)),url('images/download 2.jpeg'); /* Path to your image */
+}
+30%{        background-image: linear-gradient(rgba(64, 13, 94, 0.212), rgba(67, 45, 82, 0.664)),url('images/download 1.jpeg'); /* Path to your image */
+}
+60%{        background-image: linear-gradient(rgba(43, 23, 56, 0.397), rgba(70, 45, 82, 0.664)),url('images/download.jpeg'); /* Path to your image */
+}
+100%{        background-image: linear-gradient(rgba(38, 23, 56, 0.596), rgba(72, 45, 82, 0.664)),url('images/OIP.jpeg'); /* Path to your image */
+}
+}
+
+.h1 p{
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.h1 h1{
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 0
+}
+
+article {
+    flex: 1;
+    align-items: center;
+    min-width: 250px;
+    background-color: #48014e5d;
+    backdrop-filter: blur(10px);
+    border-radius: 5%;
+    margin: 1rem;
+    padding: 1rem 0rem;
+}
+
+article  img{
+    width: 100%;
+    height: 50%;
+    padding: 0.5rem;
+    border-radius: 5%;
+}
+
+article input{
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #9d1ca8f5;
+    color: white;
+    border-radius: 5%;
+    border: none;
+}
+
+article input:hover{
+    background-color: #48014ef5;
+    box-shadow: 4px 4px 22px  #e26aec5d,
+     inset 4px 4px 22px  #e26aec5d;
+}
+
+section > .h2:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+    box-shadow: 2px 2px 12px  #48014e5d;
+}
+
+footer {
+    display: flex;
+    background-color: #4e055513;
+    backdrop-filter: blur(10px);}
+
+footer div {
+    flex: 1;
+}
+
+footer div img{
+    display: inline-block;
+    height: 100px;
+    padding-left: 1rem;
+}
+
+footer div p{
+    text-align: center;
+    padding-top: 2.5rem;
+}
